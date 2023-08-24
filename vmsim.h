@@ -11,9 +11,10 @@
 
 #define TRACE_1 16
 #define TRACE_2 64
+#define TRACE 14
 #define PAGE_COUNT 32
-#define FRAME_SIZE 2048
-#define MAX_FRAME_SIZE 65546
+#define FRAME_SIZE 256
+//#define MAX_FRAME_SIZE 65546
 #define BIG_NUM 10000
 #define SMOL_NUM -1
 
