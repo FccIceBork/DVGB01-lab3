@@ -2,7 +2,6 @@
 #include "help.h"
 
 
-//init help functions
 void hex_to_dec(struct memory_referance *hex, int size);
 int check_ram(struct page_table *page_t, struct free_frame_list *ram, int size, int page, int time);
 int free_space(struct page_table *page_t, struct free_frame_list *ram, int size, int page, int time);
@@ -45,7 +44,7 @@ int main(int argc, char *argv[])
         return 0;
     }
 
-    if(strcmp(argv[3], "lab3/trace_1.dat") == 0 || strcmp(argv[3], "lab3/trace_2.dat") == 0){
+    if(strcmp(argv[3], "lab3/trace_1.dat") == 0 || strcmp(argv[3], "lab3/trace_2.dat") == 0 || strcmp(argv[3], "lab3/trace.dat") == 0){
         sorce = argv[3];
     }else{
         printf("Worng trace file!\n");
@@ -55,6 +54,8 @@ int main(int argc, char *argv[])
     //Read memory referancees
     if(strcmp(sorce, "lab3/trace_1.dat") == 0){
         adress_space = TRACE_1;
+    }else if(strcmp(sorce, "lab3/trace.dat") == 0){
+        adress_space = TRACE;
     }
     struct memory_referance mr[adress_space];
 
