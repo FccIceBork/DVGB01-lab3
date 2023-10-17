@@ -22,6 +22,6 @@ gcc vmsim.c -o vmsim -lm
 Körning:
 ./vmsim -a -n -f
 
--a: FIFO || LRU || Optimal
--n: antal ramar, får ej vara 0
+-a: antal ramar, får ej vara 0
+-n: FIFO || LRU || Optimal
 -f: lab3/trace_1.dat || lab3/trace_2.dat
